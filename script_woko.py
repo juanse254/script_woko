@@ -5,10 +5,10 @@ import smtplib
 from bs4 import BeautifulSoup
 from time import sleep
 
-emailadrr = test@gmail.com #it has to be a gmail.
-passemail = pass1234 #password of the gmail account
+emailadrr = 'test@gmail.com' #it has to be a gmail.
+passemail = 'pass1234' #password of the gmail account
 previousint = 0
-ccaddrr = secondemail@gmail.com # a secondary email address in case the first one is not reacheable.
+ccaddrr = 'secondemail@gmail.com' # a secondary email address in case the first one is not reacheable.
 time_between_query = 60 #time between crawling, default 60 might involve blacklisting. Set to 3600 or use proxies.
 #Send through Gmail Stuff
 def sendemail(from_addr, to_addr_list, cc_addr_list,
